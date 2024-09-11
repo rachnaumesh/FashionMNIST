@@ -40,10 +40,10 @@ The following graphs show the training and test accuracies for each technique an
 
 ## Summary Table
 
-| Model                                    | Train Accuracy (%)       | Test Accuracy (%)       | Best Epoch              |
+| Model                                    | Train Accuracy (%)       | Best Test Accuracy (%)  | Best Epoch              |
 |------------------------------------------|--------------------------|-------------------------|-------------------------|
 | No Regularization                        | 95.65                    | 90.69                   | 12                      |
-| Dropout (0.5)                            | 95.52                    | 90.24                   | 19                      |
+| Dropout (0.5)                            | 90.52                    | 90.24                   | 19                      |
 | Weight Decay                             | 95.27                    | 90.79                   | 17                      |
 | Batch Normalization (before ReLU)        | 96.15                    | 90.88                   | 14                      |
 
