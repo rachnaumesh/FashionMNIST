@@ -40,16 +40,16 @@ The following graphs show the training and test accuracies for each technique an
 
 ## Summary Table
 
-| Model                                    | Final Train Accuracy (%) | Final Test Accuracy (%) |
-|------------------------------------------|--------------------------|-------------------------|
-| No Regularization                        | 95.70                    | 89.77                   |
-| Dropout (0.5)                            | 90.78                    | 90.61                   |
-| Weight Decay                             | 95.39                    | 90.31                   |
-| Batch Normalization (before ReLU)        | 96.17                    | 90.23                   |
+| Model                                    | Train Accuracy (%)       | Test Accuracy (%)       | Best Epoch              |
+|------------------------------------------|--------------------------|-------------------------|-------------------------|
+| No Regularization                        | 95.65                    | 90.69                   | 12                      |
+| Dropout (0.5)                            | 95.52                    | 90.24                   | 19                      |
+| Weight Decay                             | 95.27                    | 90.79                   | 17                      |
+| Batch Normalization (before ReLU)        | 96.15                    | 90.88                   | 14                      |
 
 ## Conclusions
 
-1. **No Regularization**: Serves as a baseline for comparison. The model achieves high train accuracy but generalizes less well than other models.
+1. **Base Model**: Serves as a baseline for comparison. The model achieves high train accuracy but generalizes less well than other models.
 2. **Dropout**: Helps prevent overfitting by reducing interdependent learning between neurons. The test accuracy is the highest among the regularization techniques.
 3. **Weight Decay**: Prevents overfitting by adding a penalty term to the loss function, which discourages large weights. This technique strikes a balance between high train and test accuracy.
 4. **Batch Normalization**: Improves training stability and speed by normalizing layer inputs. It achieves the highest train accuracy but slightly lower test accuracy compared to dropout.
