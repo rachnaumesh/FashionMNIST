@@ -50,9 +50,9 @@ The following graphs show the training and test accuracies for each technique an
 ## Conclusions
 
 1. **Base Model**: Serves as a baseline for comparison. The model achieves high train accuracy but generalizes less well than other models.
-2. **Dropout**: Helps prevent overfitting by reducing interdependent learning between neurons. The test accuracy is the highest among the regularization techniques.
+2. **Dropout**: Helps prevent overfitting by reducing interdependent learning between neurons. 
 3. **Weight Decay**: Prevents overfitting by adding a penalty term to the loss function, which discourages large weights. This technique strikes a balance between high train and test accuracy.
-4. **Batch Normalization**: Improves training stability and speed by normalizing layer inputs. It achieves the highest train accuracy but slightly lower test accuracy compared to dropout.
+4. **Batch Normalization**: Improves training stability and speed by normalizing layer inputs. It achieves the highest train and test accuracies.
 
 ## How to Train and Test
 
