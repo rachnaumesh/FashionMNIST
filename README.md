@@ -56,13 +56,8 @@ The following graphs show the training and test accuracies for each technique an
 
 ## How to Train and Test
 
-1. **Train the Model**: 
+1. **Training and Testing the Model**: 
 In order to train each model, our last block of code in the google colab file has to be run. The block contains the training and testing loops, which go for as many epochs as specified in the code. The code loops through each of the four models specified and runs the function for each. 
-
-2. **Test the Model**: After training, you can test the model using saved weights:
-    ```bash
-    python test.py --model_type [base|dropout|weight_decay|batch_norm] --weights_path ./saved_models/[model_name]_best.pth
-    ```
 
 ## Reference
 
