@@ -27,7 +27,7 @@ The models are trained for 20 epochs, and the following hyperparameters are used
 
 - **Batch size**: 64
 - **Learning rate**: 0.001
-- **Optimizer**: Adam (with or without weight decay depending on the model)
+- **Optimizer**: Adam 
 - **Dropout rate**: 0.5
 
 We split the training data into a train-validation set using an 80-20 split and selected the best model based on validation accuracy.
@@ -69,14 +69,6 @@ The following graphs show the training and test accuracies for each technique an
     ```bash
     python test.py --model_type [base|dropout|weight_decay|batch_norm] --weights_path ./saved_models/[model_name]_best.pth
     ```
-
-## Hyperparameters
-
-- **Batch size**: 64
-- **Learning rate**: 0.001
-- **Optimizer**: Adam
-- **Dropout rate**: 0.5 for the dropout model
-- **L2 Regularization (Weight Decay)**: 1e-4
 
 ## Reference
 
