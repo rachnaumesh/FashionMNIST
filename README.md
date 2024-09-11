@@ -56,8 +56,17 @@ The following graphs show the training and test accuracies for each technique an
 
 ## How to Train and Test
 
-1. **Training and Testing the Model**: 
-In order to train each model, our last block of code in the google colab file has to be run. The block contains the training and testing loops, which go for as many epochs as specified in the code. The code loops through each of the four models specified and runs the function for each. 
+1. **Training and Evaluating the Model**: 
+To train and evaluate the models, the final block of code should be executed within the provided notebook. This block initializes four different model configurations and runs a training and testing loop for each one, over a predefined number of epochs.
+```bash
+models = {
+    'Base Model': LeNet5().to(device),
+    'Dropout': LeNet5Regularized(dropout_rate=dropout_rate).to(device),
+    'Weight Decay': LeNet5().to(device),
+    'Batch Normalization': LeNet5Regularized(dropout_rate=0, use_bn=True).to(device)
+}
+```
+Once this block is run, each model will undergo training for the specified number of epochs. During each epoch, the code evaluates the model on both the training and test datasets to monitor performance and generalization. The best model for each configuration is saved based on test accuracy, and the results are used to generate convergence graphs and a final accuracy comparison table.
 
 ## Reference
 
