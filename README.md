@@ -36,7 +36,7 @@ We split the training data into a train-validation set using an 80-20 split and 
 
 The following graphs show the training and test accuracies for each technique and the baseline (no regularization) over the epochs.
 
-![Convergence Graphs](convergence_graphs-2.png)
+![Convergence Graphs](results/convergence_graphs-2.png)
 
 ## Summary Table
 
